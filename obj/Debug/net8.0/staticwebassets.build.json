@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PM6YRaW2t9KdgLRo4AHeDMLjPaLZwXuGtKCKpxwzL+o=",
+  "Source": "LoginWithOTP",
+  "BasePath": "_content/LoginWithOTP",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
