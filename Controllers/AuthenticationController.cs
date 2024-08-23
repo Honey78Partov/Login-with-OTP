@@ -1,5 +1,5 @@
-﻿using LoginWithOTP.Models.Dto;
-using LoginWithOTP.Services;
+﻿using LoginWithOTP.Applications;
+using LoginWithOTP.Models.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,16 +7,20 @@ namespace LoginWithOTP.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController(IAuthenticationApplication authentication) : ControllerBase
     {
-        private readonly IAuthenticationApplication _authenticationApplication;
-        public AuthenticationController(IAuthenticationApplication authenticationApplication)
+        [HttpPost]
+        public async Task<RegisterationFlowResultDto> RegisterationFlow(RegisterationFlow registerDto,CancellationToken token)
         {
-                _authenticationApplication = authenticationApplication;
+            return await authentication.RegisterationFlow(registerDto)
         }
-        public Task RegisterUser(RegisterUserDto registerUserDto, CancellationToken token)
+
+
+
+        [HttpPost]
+        public async Task RegisterUser(RegisterUserDto registerUserDto, CancellationToken token)
         {
-            return Task.CompletedTask;
+            await authentication.RegisterUser(registerUserDto, token);
         }
     }
 }

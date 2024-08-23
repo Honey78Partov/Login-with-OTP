@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginWithOTP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df4f05c1710d9cefdefa5b51e5b196da92785af7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41d29ae84b4546c1750c99afc6fc7b1b31abedf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginWithOTP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginWithOTP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
